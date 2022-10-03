@@ -1,14 +1,5 @@
 <?php
-
-// session_start();
-
-// if (!isset($_SESSION['login'])) {
-//   header("Location: login.php");
-//   exit;
-// }
-
 require 'functions.php';
-
 
 if (isset($_POST['tambah'])) {
   if (tambah($_POST) > 0) {
@@ -17,12 +8,10 @@ if (isset($_POST['tambah'])) {
           document.location.href = 'index.php';
           </script>";
   } else {
-    echo "data gagal ditambahkan";
+    echo "data gagal ditambahkan!";
   }
 }
-
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -35,49 +24,43 @@ if (isset($_POST['tambah'])) {
 
 <body>
   <h3>Form Tambah Data Buku</h3>
-  <form action="" method="POST" enctype="multipart/form-data">
+  <form action="" method="POST">
     <ul>
       <li>
         <label>
           Nama Buku :
-          <input type="text" name="nama_buku" autofocus autocomplete="off" required>
+          <input type="text" name="nama_buku" autofocus required>
         </label>
       </li>
       <li>
         <label>
           Nama Pengarang :
-          <input type="text" name="nama_pengarang" autofocus autocomplete="off" required>
+          <input type="text" name="nama_pengarang" required>
         </label>
       </li>
       <li>
         <label>
           Jumlah Halaman :
-          <input type="text" name="jumlah_halaman" autofocus autocomplete="off" required>
+          <input type="text" name="jumlah_halaman" required>
         </label>
       </li>
       <li>
         <label>
           Harga Buku :
-          <input type="text" name="harga_buku" autofocus autocomplete="off" required>
+          <input type="text" name="harga_buku" required>
         </label>
       </li>
       <li>
         <label>
-          Gambar :
-          <input type="file" name="gambar" class="gambar" onchange="previewImage()">
+          Gambar
+          <input type="text" name="gambar" required>
         </label>
-        <img src="img/nophoto.jpg" width="120" style="display: block;" class="img-preview">
       </li>
       <li>
-        <button type="submit" name="tambah">Tambah Data!</button>
-        <button><a href="index.php" style="color: black;">Kembali</a></button>
+        <button type="submit" name="tambah">Tambah Data</button>
       </li>
     </ul>
-
   </form>
-
-  <script src="js/script.js"></script>
-
 </body>
 
 </html>
