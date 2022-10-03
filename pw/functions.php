@@ -1,3 +1,4 @@
+<!-- alif luqman -->
 <?php
 function koneksi()
 {
