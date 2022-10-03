@@ -1,0 +1,28 @@
+body {
+  background-color: rgb(164, 234, 234);
+  margin-left: 20%;
+  padding: 20px;
+}
+
+h1 {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+a {
+  color: azure;
+}
+
+.kotak {
+  border: 1px solid #cecece;
+  border-radius: 3px;
+
+  /* box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4); */
+  color: white;
+  background-color: rgb(80, 73, 100);
+  border-radius: 10px;
+}
+
+.kotak:hover {
+  border: 1px solid #b1b1b1;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}

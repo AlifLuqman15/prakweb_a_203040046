@@ -1,4 +1,6 @@
 <?php
+// Alif Luqman Hakim
+// 203040046
 require 'functions.php';
 $buku = query("SELECT * FROM buku");
 ?>
@@ -11,12 +13,13 @@ $buku = query("SELECT * FROM buku");
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Daftar Buku</title>
+  <link rel="stylesheet" href="../pw/css.css">
 </head>
 
 <body>
-  <h3>Daftar Buku</h3>
+  <h1>Daftar Buku</h1>
 
-  <a href="tambah.php">Tambah Data Buku</a>
+  <a href="tambah.php"><button class="kotak">Tambah Data Buku</a>
   <br><br>
 
   <table border="1" cellpaddling="10" cellspacing="0">
